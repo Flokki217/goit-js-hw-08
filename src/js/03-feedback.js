@@ -33,8 +33,8 @@ function submitHandler(evt) {
   if (email.value === '' || message.value === '') {
     return alert('All field have be full');
   }
-
-  console.log(JSON.parse(localStorage.getItem(FEEDBACK_KEY)));
+  const showKey = JSON.parse(localStorage.getItem(FEEDBACK_KEY));
+  console.log(showKey);
 
   localStorage.removeItem(FEEDBACK_KEY);
 
